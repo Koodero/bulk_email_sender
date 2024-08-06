@@ -15,16 +15,10 @@ sender_mail_pass = "examplepassword1"
 # Path to csv.file
 emails_csv = "example/emails.csv"
 
-
-
-
                                                                                 
 # -- Imports -- #
 import smtplib
 import csv
-
-
-
 
 
 # -- the program / script -- #
@@ -33,8 +27,7 @@ def send_mails():
     if not sender_mail or not sender_mail_pass:
         print("Email or password environment variables are not set.")
         return
-
-
+      
     #sending the gmail
     try:
         with open(emails_csv, newline='') as csv_file:
